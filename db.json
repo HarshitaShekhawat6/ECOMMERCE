@@ -1,0 +1,26 @@
+{
+  "seller": [
+    {
+      "id": "54e0",
+      "name": "Harshita Sehkhawat",
+      "email": "Harshita@1234",
+      "password": "abc@123"
+    },
+    {
+      "id": "b5d5",
+      "name": "Harshu Sehkhawat",
+      "email": "Harshu@1234",
+      "password": "abcd@123"
+    },
+    {
+      "id": "ba3d",
+      "name": "tony",
+      "password": "tony1",
+      "email": "tony2"
+    }
+  ],
+  "products":
+  [
+
+  ]
+}

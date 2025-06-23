@@ -99,12 +99,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
-            ],
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "src/styles.css"
+]
+,
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e6474a52-36e8-41c2-a93c-fd0f20ea0ece"
   }
 }
