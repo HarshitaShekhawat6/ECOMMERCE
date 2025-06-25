@@ -1,36 +1,41 @@
 import { Component, OnInit } from '@angular/core';
-import { signUp } from '../data-type';
+import { login, signUp } from '../data-type';
 import { SellerService } from '../services/seller.service';
 
 @Component({
   selector: 'app-seller-auth',
   templateUrl: './seller-auth.component.html',
-  styleUrls: ['./seller-auth.component.css'],
+  styleUrls: ['./seller-auth.component.css']
 })
 export class SellerAuthComponent implements OnInit {
-  showLogin=false;
-  authError:String=' ';
+  showLogin = false;
+  authError: string = '';
+
   constructor(private seller: SellerService) {}
 
   ngOnInit(): void {
-    this.seller.reloadSeller()
+    this.seller.reloadSeller();
   }
+
   signUp(data: signUp): void {
-    console.warn(data);
+    console.warn('Sign-up data:', data);
     this.seller.userSignUp(data);
   }
-  login(data: signUp): void {
+
+  login(data: login): void {
     this.seller.userLogin(data);
-    this.seller.isLoginError.subscribe((isError)=>{
-      if(isError){
-        this.authError="Email or password is incorrect";
-      }
-    })
+    this.seller.isLoginError.subscribe((isError) => {
+      this.authError = isError ? 'Email or password is incorrect' : '';
+    });
   }
-  openLogin(){
-    this.showLogin=true
+
+  openLogin() {
+    this.showLogin = true;
+    this.authError = '';
   }
-  openSignUp(){
-    this.showLogin=false
+
+  openSignUp() {
+    this.showLogin = false;
+    this.authError = '';
   }
 }

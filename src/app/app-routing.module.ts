@@ -14,50 +14,21 @@ import { SellerUpdateProductComponent } from './seller-update-product/seller-upd
 import { UserAuthComponent } from './user-auth/user-auth.component';
 
 const routes: Routes = [
-  {
-    component: HomeComponent,
-    path: '',
-  },
-  {
-    component: SellerAuthComponent,
-    path: 'seller-auth',
-  },
-  {
-    component:SellerHomeComponent,
-    path:'seller-home',
-    canActivate:[AuthGuard]
-  },{
-    component:SellerAddProductComponent,
-    path:'seller-add-product',
-    canActivate:[AuthGuard]
-  },{
-    component:SellerUpdateProductComponent,
-    path:'seller-update-product/:id',
-    canActivate:[AuthGuard]
-  },
-  {
-    component: SearchComponent,
-    path:'search/:query'
-  },{
-    component:ProductDetailsComponent,
-    path:'details/:productId'
-  },{
-    component:UserAuthComponent,
-    path:'user-auth'
-  },{
-    component:CartPageComponent,
-    path:'cart-page'
-  },{
-    component:CheckoutComponent,
-    path:'checkout'
-  },{
-    component:MyOrdersComponent,
-    path:'my-orders'
-  }
+  { path: '', component: HomeComponent },
+  { path: 'seller-auth', component: SellerAuthComponent },
+  { path: 'seller-home', component: SellerHomeComponent, canActivate: [AuthGuard] },
+  { path: 'seller-add-product', component: SellerAddProductComponent, canActivate: [AuthGuard] },
+  { path: 'seller-update-product/:id', component: SellerUpdateProductComponent, canActivate: [AuthGuard] },
+  { path: 'search/:query', component: SearchComponent },
+  { path: 'details/:productId', component: ProductDetailsComponent },
+  { path: 'user-auth', component: UserAuthComponent },
+  { path: 'cart', component: CartPageComponent },          // ✅ FINAL - This is your cart route
+  { path: 'checkout', component: CheckoutComponent },
+  { path: 'my-orders', component: MyOrdersComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

@@ -17,10 +17,62 @@
       "name": "tony",
       "password": "tony1",
       "email": "tony2"
+    },
+    {
+      "id": "fbb8",
+      "name": "Kiku",
+      "password": "kiku123",
+      "email": "kiku@12"
     }
   ],
-  "products":
-  [
-
-  ]
+  "products": [
+    {
+      "id": "2e04",
+      "name": "Laptop",
+      "price": "75,000",
+      "category": "Hp",
+      "color": "Blue",
+      "description": "Good Laptop",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ_VkDJ76M_5skU_tKhb6gO3kpD5I1vNCO3XBhn04q4XUp5Kcage1-BxFpgX8SJSYPhjp8ICm3zdWRk4wlxe7Kd_4ka0ABJ6wm_7Ig&usqp=CAc"
+    },
+    {
+      "id": "9619",
+      "name": "Phone",
+      "price": "30000",
+      "category": "Samsung",
+      "color": "Blue",
+      "description": "Good Phone",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSbeKljkL6c5etxKLyTgI1huNyl20yq1BUEgX2B7_u0r3Ivue8RMmMAnV1NAevpr0W9ujBnrI4jiWD_ec_2YIAKMtPPcCHexKJ2cfGt5ECD-lSAsSenQ3ACFORAe2CXTJPmmxmnGU8&usqp=CAc"
+    },
+    {
+      "id": "ef2c",
+      "name": "Phone",
+      "price": "30000",
+      "category": "Samsung",
+      "color": "Blue",
+      "description": "Good Phone",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSbeKljkL6c5etxKLyTgI1huNyl20yq1BUEgX2B7_u0r3Ivue8RMmMAnV1NAevpr0W9ujBnrI4jiWD_ec_2YIAKMtPPcCHexKJ2cfGt5ECD-lSAsSenQ3ACFORAe2CXTJPmmxmnGU8&usqp=CAc"
+    },
+    {
+      "id": "a24b",
+      "name": "Earbuds",
+      "price": "3000",
+      "category": "Boat",
+      "color": "Black",
+      "description": "Nice Earbuds",
+      "image": "data:image/jpeg;base64,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"
+    }
+  ],
+  "cart": [
+    {
+      "id": "2e04",
+      "name": "Laptop",
+      "price": "75,000",
+      "category": "Hp",
+      "color": "Blue",
+      "description": "Good Laptop",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ_VkDJ76M_5skU_tKhb6gO3kpD5I1vNCO3XBhn04q4XUp5Kcage1-BxFpgX8SJSYPhjp8ICm3zdWRk4wlxe7Kd_4ka0ABJ6wm_7Ig&usqp=CAc"
+    }
+  ],
+  "orders": []
 }
